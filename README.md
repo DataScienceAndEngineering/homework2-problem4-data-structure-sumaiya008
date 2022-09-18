@@ -47,6 +47,16 @@ This is the read me file for homework 2 problem 4
 | provides constant time for searching, insertion and deletion operations on average.| Inefficient when there are many collisions. |
 
 
+## Pros and cons of Trees
+
+| Advantages    | Disadvantages  |
+| ------------- |:--------------:|
+| trees requires less effort for data preparation during pre-processing.| Involves higher time to train the model.|
+| Provides a flexible way to hold and move data. | It's inadequate for applying regression and predicting continuous values.|
+| Does not require normalization of data.| Sometimes calculation can go far more complex compared to other algorithms.|
+
+
+
 
 
 
