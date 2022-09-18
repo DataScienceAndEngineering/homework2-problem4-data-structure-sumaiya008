@@ -27,3 +27,69 @@ This is the read me file for homework 2 problem 4
 | Easy to learn and implement for beginners. | Accessing randomly is not possible. |
 | Stack automatically cleans up the object. | Abnormal termination & overflow can happen here. |
 | More secure and reliable. | Size of the stack must be defined before & limited size. |
+
+
+## Pros and cons of Queue
+
+| Advantages    | Disadvantages  |
+| ------------- |:--------------:|
+| Multiple data can be handled. | Difficult to add or remove pieces from the midst of the queue. |
+| Fast and flexibility. | To include a new element in the queue, the other elements must be deleted. |
+| Can handle multiple data types. | Queues are not readily searchable. This is because it takes O(N) time to search. |
+
+
+## Pros and cons of hash-based data structures (Key-Values)
+
+| Advantages    | Disadvantages  |
+| ------------- |:--------------:|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
