@@ -38,10 +38,13 @@ This is the read me file for homework 2 problem 4
 | Can handle multiple data types. | Queues are not readily searchable. This is because it takes O(N) time to search. |
 
 
-## Pros and cons of hash-based data structures (Key-Values)
+## Pros and cons of hash-based data structures
 
 | Advantages    | Disadvantages  |
 | ------------- |:--------------:|
+| The access time of an element is on average O(1). | Collisions are practically not be avoided for large set of possible keys.|
+| Main advantage is synchronization. | Hash does not allow null values. |
+| provides constant time for searching, insertion and deletion operations on average.| Inefficient when there are many collisions. |
 
 
 
