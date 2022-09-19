@@ -8,3 +8,13 @@ class MyStack(object):
         Create an empty stack here.
         """
         self.queue = deque([])
+
+# push element in stack
+    def push(self, x):
+        """
+        @param x
+        return nothing
+        """
+        self.queue.append(x)
+        for i in range(len(self.queue)):
+            self.queue.append(self.queue.popleft())
