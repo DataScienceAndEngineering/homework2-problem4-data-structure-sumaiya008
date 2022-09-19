@@ -8,5 +8,11 @@ class Stack(object):
         Create an empty stack here.
         """
         self.q = deque()
-
-    
+        
+# push element in stack
+     def push(self, x):
+        """
+        @param x, an int
+        return nothing
+        """
+        self.q.append( x )
