@@ -26,4 +26,16 @@ class Stack(object):
         for i in range(queueLen-1):
             x = self.q.popleft()
             self.q.append(x)
-        self.q.popleft()        
+        self.q.popleft()  
+
+    def peek(self):
+        """
+        return top element
+        """
+        if self.q.is_empty():
+            raise IndexError('Stack have no element')
+            else:
+        for i in range(len(self.q)):
+            x = self.q.popleft()
+            self.q.append(x)
+        return x
