@@ -28,3 +28,12 @@ class MyStack(object):
             return False
         else:
             return self.queue.popleft()
+
+    def top(self):
+        """
+        return top element
+        """
+        if self.queue.empty():
+            return False
+        else:
+            return self.queue[0]
