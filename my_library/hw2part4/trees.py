@@ -46,4 +46,16 @@ class BinarySearchTree(object):
             return 0
         return self.root.height()
 
-    
+    #Print the value of tree in order.
+    def inOrder(self, root):
+        if self.root != None:
+            self.inOrder(root.left)
+            print(root.data, ', ', end=' ')
+            self.inOrder(root.right)
+
+    #logic for empty tree.
+    def empty(self, root):
+        if self.root in None:
+            return True
+        else:
+            return False
