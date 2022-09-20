@@ -44,4 +44,9 @@ class LinkedList(object):
                     return
                 prev_node.next = new_node.next
                 return
-        
+
+    def printList(self):
+        new_node = self.head
+        while(new_node != None):
+            print(new_node, end=' ')
+            new_node = new_node.next
