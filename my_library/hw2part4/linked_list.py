@@ -8,5 +8,11 @@ class Node(object):
         self.next = next;
 
 #creating LinkedList class.
-class LinkedList:
-      
+class LinkedList(object):
+    #Defining head
+    def __init__( self ):
+		self.head = None
+
+   
+    
+		
