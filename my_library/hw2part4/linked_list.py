@@ -1,6 +1,9 @@
 # Simple linked list implementation
 
 # creating class node.
+from hashlib import new
+
+
 class Node(object):
     # node carry data and a pointer which points to next data.
     def __init__(self, data, next = None):
@@ -11,7 +14,7 @@ class Node(object):
 class LinkedList(object):
     #Defining head
     def __init__( self ):
-		self.head = None
+        self.head = None
 
     # Adding node at the biginning.
     def add(self, data):
@@ -19,4 +22,26 @@ class LinkedList(object):
         new_node.next = self.head
         self.head = new_node
     
-		
+    #remove a node
+    def remove(self, data):
+        new_node = self.head
+        # if data is in head node.
+        if (new_node.next is not None):
+            if(new_node.data == data):
+                self.head = new_node.next
+                new_node = None
+                return
+            else:
+                #  else search all the nodes
+                while(new_node.next != None):
+                    if(new_node.data == data):
+                        break
+                    prev_node = new_node
+                    new_node = new_node.next
+                
+                # node not found
+                if new_node == None:
+                    return
+                prev_node.next = new_node.next
+                return
+        
