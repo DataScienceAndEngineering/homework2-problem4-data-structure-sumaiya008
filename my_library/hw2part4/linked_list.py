@@ -13,6 +13,10 @@ class LinkedList(object):
     def __init__( self ):
 		self.head = None
 
-   
+    # Adding node at the biginning.
+    def add(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
     
 		
