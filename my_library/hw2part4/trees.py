@@ -27,3 +27,16 @@ class BinarySearchTree(object):
         else:
             root.data = data
         return root
+
+    #Deleting elements from the tree.
+    def remove(self, root, data):
+        if data < root.data:
+            root.left = self.remove(root.left, data)
+        elif data > root.data:
+            root.right = self.rempve(root.right, data)
+        else:
+            if root.left is None:
+                return root.right
+
+            if root.right is None:
+                return root.left
