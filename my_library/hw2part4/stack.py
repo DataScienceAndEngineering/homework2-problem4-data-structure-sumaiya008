@@ -18,3 +18,13 @@ class MyStack(object):
         self.queue.append(x)
         for i in range(len(self.queue)):
             self.queue.append(self.queue.popleft())
+
+    def pop(self):
+        """
+        pop one item
+        return nothing
+        """
+        if self.queue.empty():
+            return False
+        else:
+            return self.queue.popleft()
