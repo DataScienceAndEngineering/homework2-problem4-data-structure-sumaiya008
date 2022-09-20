@@ -37,3 +37,9 @@ class MyStack(object):
             return False
         else:
             return self.queue[0]
+
+    def empty(self):
+        """
+        check stack empty or not.
+        """
+        return len(self.queue) == 0        
