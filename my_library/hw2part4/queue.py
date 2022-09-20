@@ -16,4 +16,12 @@ class MyQueue():
             return False
         else:
             return self.items.pop()
+
+    # Checking empty or not
+    def isEmpty(self):
+        return self.items == []
+
+    # return size of the items
+    def size(self):
+        return len(self.items)
     
