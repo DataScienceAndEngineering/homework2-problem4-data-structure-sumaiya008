@@ -40,3 +40,10 @@ class BinarySearchTree(object):
 
             if root.right is None:
                 return root.left
+
+    def height(self, root):
+        if self.root is None:
+            return 0
+        return self.root.height()
+
+    
